@@ -4,10 +4,10 @@ from tweepy import Stream
 import json
 tweets = []
 #Variables that contains the user credentials to access Twitter API
-access_token = "144826144-fRTezjoG4fnVCgxymQ5XvIEOhuoB8MNX6bBzPXjr"
-access_token_secret = "XcsomBu7jln5lP1j4lb4j2pjkooUChNQRmTIRaJbF6HIx"
-consumer_key = "qZlLHeRDuswGWNRiE7oyH1sks"
-consumer_secret = "LxYquxhs75BB3hfi3LnCl4iEIp5elcL5qbw0Azv9iFyKDPiTBW"
+access_token = ""
+access_token_secret = ""
+consumer_key = ""
+consumer_secret = ""
 
 #This is a basic listener that just prints received tweets to stdout.
 class StdOutListener(StreamListener):
@@ -54,4 +54,3 @@ if __name__ == '__main__':
 
     #This line filter Twitter Streams to capture data by the keywords: 'python', 'javascript', 'ruby'
 stream.userstream(track=['@barackobama, @HillaryClinton, @jimwebbUSA, @realDonalTrump, @Berniesanders, @jebBush']) # or f.write('...\n')
-
